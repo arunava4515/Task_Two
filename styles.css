@@ -1,0 +1,253 @@
+/* General reset and box sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif; /* Japanese-inspired font */
+    line-height: 1.6;
+    background-color: #e0f7fa; /* Light teal background */
+    color: #333;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+header {
+    background: #00796b; /* Teal color */
+    color: #fff; /* White text */
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    animation: slideInFromTop 1s ease-out; /* Animation for header */
+}
+
+.header-img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Place the image behind the content */
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-family: 'Sawarabi Gothic', sans-serif; /* Japanese-inspired header font */
+    font-size: 2.5em; /* Larger size for emphasis */
+    color: #000; /* Black text for headers */
+    background-color: #fff; /* White background for readability */
+    padding: 10px;
+    border-radius: 5px;
+    animation: fadeIn 2s ease-in; /* Animation for header text */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    animation: slideInFromTop 1.5s ease-out; /* Animation for navigation */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #000; /* Black color for links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Transition for hover effect */
+}
+
+nav ul li a:hover {
+    color: #ffff00; /* Bright yellow on hover */
+    text-decoration: underline;
+    animation: pulse 1s infinite; /* Pulse effect on hover */
+}
+
+main {
+    padding: 20px;
+    max-width: 100vw; /* Full viewport width */
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    animation: fadeIn 1.5s ease-in; /* Animation for main content */
+}
+
+.section-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 10px 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for hover effects */
+}
+
+.section-img:hover {
+    transform: scale(1.1) translateY(-10px); /* Zoom and levitate effect on hover */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5); /* Enhanced shadow effect on hover */
+}
+
+section {
+    margin-bottom: 20px;
+    position: relative;
+    padding: 20px;
+    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden; /* Ensure animations are contained */
+    animation: fadeIn 1s ease-out; /* Animation for sections */
+}
+
+#home {
+    background-image: url('https://media.graphassets.com/lNSiKkJ3Rk20t3bos2DY');
+}
+
+#home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Lighter dark overlay for text visibility */
+    border-radius: 8px;
+    z-index: 1;
+}
+
+#about {
+    background-image: url('https://static1.srcdn.com/wordpress/wp-content/uploads/2022/05/Demon-Slayer-Mugen-Train-key-art.jpg');
+}
+
+#about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Lighter dark overlay for text visibility */
+    border-radius: 8px;
+    z-index: 1;
+}
+
+#types {
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/090369d8-1554-4c40-ad02-de947489faf3/dfvn98h-23e64b4a-ee0c-4e65-8f05-cd161d09b77d.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzA5MDM2OWQ4LTE1NTQtNGM0MC1hZDAyLWRlOTQ3NDg5ZmFmM1wvZGZ2bjk4aC0yM2U2NGI0YS1lZTBjLTRlNjUtOGYwNS1jZDE2MWQwOWI3N2QucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.xQD2Alw4j4GnfRcMUKyJpKKVF-39s1OZCYKnqwq3nlo');
+}
+
+#types::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Lighter dark overlay for text visibility */
+    border-radius: 8px;
+    z-index: 1;
+}
+
+#popular {
+    background-image: url('https://images.wallpapersden.com/image/download/naruto-akatsuki-dark-art_bW5nZWuUmZqaraWkpJRmbmdlrWZlbWU.jpg');
+}
+
+#popular::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Lighter dark overlay for text visibility */
+    border-radius: 8px;
+    z-index: 1;
+}
+
+#contact {
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/090369d8-1554-4c40-ad02-de947489faf3/dfvn98h-23e64b4a-ee0c-4e65-8f05-cd161d09b77d.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzA5MDM2OWQ4LTE1NTQtNGM0MC1hZDAyLWRlOTQ3NDg5ZmFmM1wvZGZ2bjk4aC0yM2U2NGI0YS1lZTBjLTRlNjUtOGYwNS1jZDE2MWQwOWI3N2QucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.xQD2Alw4j4GnfRcMUKyJpKKVF-39s1OZCYKnqwq3nlo');
+}
+
+#contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Lighter dark overlay for text visibility */
+    border-radius: 8px;
+    z-index: 1;
+}
+
+/* Ensuring text readability */
+section h2 {
+    color: #000; /* Black color for headers */
+    background-color: #fff; /* White background for headers */
+    padding: 10px;
+    border-radius: 5px;
+    animation: fadeIn 2s ease-in; /* Animation for section headers */
+}
+
+section p {
+    color: #000; /* Black for paragraphs */
+    background-color: #fff; /* White background for paragraphs */
+    padding: 10px;
+    border-radius: 5px;
+    animation: fadeIn 2s ease-in; /* Animation for paragraphs */
+}
+
+/* Subheaders for #types and #popular sections */
+#types h3, #popular h3 {
+    color: #ff5722; /* Bright orange for subheaders in #types and #popular sections */
+    font-family: 'Sawarabi Gothic', sans-serif; /* Japanese-inspired font */
+    background-color: #fff; /* White background for subheaders */
+    padding: 10px;
+    border-radius: 5px;
+    animation: fadeIn 2s ease-in; /* Animation for subheaders */
+}
+
+/* Navigation menu animation */
+nav ul {
+    opacity: 0;
+    animation: slideInFromTop 1.5s ease-out forwards;
+}
+
+/* Pulsing effect */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Slide-in effect from top */
+@keyframes slideInFromTop {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Keyframes for fading effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
